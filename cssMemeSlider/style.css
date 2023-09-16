@@ -58,7 +58,7 @@ body {
     height: 10%;
 }
 .footer__slider{
-    width: 80%;
+    width: 81%;
     overflow: hidden;
 }
 
@@ -88,13 +88,18 @@ body {
     display: none;
 }
 
-.bar {
+.bar{
     display: inline-block;
-    width: 40px;
-    height: 20px;
+    padding: 0.2rem 0.5rem;
+    border-radius: 50%;
     background-color: rgb(130, 227, 13);
     cursor: pointer;
-    z-index: 2;
+}
+
+.bar span{
+    display: inline-block;
+    width: 20px;
+    height: 15px;    
 }
 .bar:hover {
     background-color: rgb(146, 203, 53);
@@ -154,21 +159,21 @@ body {
 /*Для кнопок навигации*/
 #r1:checked~.footer>.footer__navigation label:nth-child(1) {
 
-    background-color: #cf1a1a;
+    background-color: #d8ab15;
 }
 
 #r2:checked~.footer>.footer__navigation label:nth-child(2) {
-    background-color: #cf1a1a;
+    background-color: #d8ab15;
 }
 
 #r3:checked~.footer>.footer__navigation label:nth-child(3) {
-    background-color: #cf1a1a;
+    background-color: #d8ab15;
 }
 
 #r4:checked~.footer>.footer__navigation label:nth-child(4) {
-    background-color: #cf1a1a;
+    background-color: #d8ab15;
 }
 
 #r5:checked~.footer>.footer__navigation label:nth-child(5) {
-    background-color: #cf1a1a;
+    background-color: #d8ab15;
 }
