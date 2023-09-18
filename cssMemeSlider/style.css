@@ -7,7 +7,7 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
+    font-size: 1.2vw;
 }
 
 .wrapper {
@@ -48,7 +48,7 @@ body {
     height: 90%;
     border-radius: 50%;
     object-fit: fill;
-    border-radius: 72px;
+    border-radius: 10%;
     object-position: 50%;
 }
 
@@ -73,6 +73,7 @@ body {
 .slider__content-item {
     width: 20%;
     color: #ffffff;
+    transition: all 2s;
 }
 
 .footer__navigation {
@@ -86,29 +87,29 @@ body {
 
 .bar {
     display: inline-block;
-    padding: 0.2rem 0.5rem;
-    border-radius: 50%;
-    background-color: rgb(130, 227, 13);
+    padding: 0.5rem 0.5rem;
     cursor: pointer;
 }
 
 .bar span {
     display: inline-block;
-    width: 20px;
-    height: 15px;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    background-color: rgb(130, 227, 13);
 }
 
-.bar:hover {
+.bar span:hover {
     background-color: rgb(146, 203, 53);
     transform: scale(1.1);
 }
 
-.bar:active {
+.bar span:active {
     background-color: rgb(203, 125, 53);
     transform: scale(1.1);
 }
 
-.bar:enabled {
+.bar span:enabled {
     background-color: rgb(203, 103, 53);
     transform: scale(1.1);
 }
@@ -116,7 +117,7 @@ body {
 
 #r1:checked~.slider__images .s1 {
 
-    margin-left: 0px;
+    margin-left: 0%;
 }
 
 #r2:checked~.slider__images .s1 {
@@ -137,7 +138,7 @@ body {
 
 #r1:checked~.footer>.footer__slider>.slider__content .s2 {
 
-    margin-left: 0px;
+    margin-left: 0%;
 }
 
 #r2:checked~.footer>.footer__slider>.slider__content .s2 {
@@ -157,24 +158,24 @@ body {
 }
 
 /*Для кнопок навигации*/
-#r1:checked~.footer>.footer__navigation label:nth-child(1) {
+#r1:checked~.footer>.footer__navigation label:nth-child(1) span{
 
     background-color: #d8ab15;
 }
 
-#r2:checked~.footer>.footer__navigation label:nth-child(2) {
+#r2:checked~.footer>.footer__navigation label:nth-child(2) span{
     background-color: #d8ab15;
 }
 
-#r3:checked~.footer>.footer__navigation label:nth-child(3) {
+#r3:checked~.footer>.footer__navigation label:nth-child(3) span{
     background-color: #d8ab15;
 }
 
-#r4:checked~.footer>.footer__navigation label:nth-child(4) {
+#r4:checked~.footer>.footer__navigation label:nth-child(4) span{
     background-color: #d8ab15;
 }
 
-#r5:checked~.footer>.footer__navigation label:nth-child(5) {
+#r5:checked~.footer>.footer__navigation label:nth-child(5) span{
     background-color: #d8ab15;
 }
 
@@ -185,6 +186,7 @@ body {
 
     .footer__slider {
         width: 74%;
+        font-size: 1.3em;
     }
 }
 
